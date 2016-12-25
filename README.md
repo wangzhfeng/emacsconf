@@ -11,7 +11,7 @@
 将配置下载到本地，我习惯将配置放在C盘之外的地方，因为我经常重装系统，以免重新下载。比如将配置库保存在D盘中。
 
 ```
-git clone https://github.com/wangzhfeng/emacsconf.git d:\emacsconf
+git clone https://github.com/{YOURNAME}/emacsconf.git d:\emacsconf
 ```
 
 然后在个人文件夹中建立到配置库的连接。
