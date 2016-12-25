@@ -8,8 +8,6 @@
 (require-package 'molokai-theme)
 (require-package 'color-theme-sanityinc-solarized)
 
-;; (load-theme 'molokai t)
-;; (load-theme 'spacemacs-light t)
 (load-theme 'monokai t)
 ;; (load-theme 'zenburn t)
 ;; (load-theme 'solarized t)
