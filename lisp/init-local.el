@@ -2,7 +2,9 @@
 (dolist (charset '(han kana symbol cjk-misc bopomofo))
   (set-fontset-font (frame-parameter nil 'font)
                     charset
-                    (font-spec :family "SimSun" :size 18)))
+                   ;; (font-spec :family "SimSun" :size 18)
+                    (font-spec :family "Microsoft Yahei" :size 18)
+                    ))
 
 ;; 优先使用utf-8编码文件
 (prefer-coding-system 'utf-8)
@@ -37,6 +39,7 @@
 
 (global-hl-line-mode t)
 (global-visual-line-mode t)
+(column-number-mode t)
 ;; (global-linum-mode t)
 ;; (setq linum-format "  %d")
 

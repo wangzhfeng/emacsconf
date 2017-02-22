@@ -6,12 +6,15 @@
 (require-package 'solarized-theme)
 (require-package 'spacemacs-theme)
 (require-package 'molokai-theme)
+(require-package 'blackboard-theme)
 (require-package 'color-theme-sanityinc-solarized)
 
-(load-theme 'monokai t)
-;; (load-theme 'zenburn t)
+;; (load-theme 'monokai t)
+;;(load-theme 'wombat t)
+;;(load-theme 'zenburn t)
 ;; (load-theme 'solarized t)
 ;; (load-theme 'sanityinc-solarized-light t)
+(load-theme 'blackboard t)
 
 ;;------------------------------------------------------------------------------
 ;; Toggle between light and dark

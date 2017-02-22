@@ -1,0 +1,8 @@
+This is a place for 3rd party code which isn't available in MELPA or
+other package repositories. This directory and its immediate subdirectories
+will be added to load-path at start-up time.
+
+Notably, in Emacs 23.x, a backported package.el is automatically
+downloaded and installed here.
+
+第三方包必须按照site-lisp/package-name/package-name.el存放，否则加载不到。

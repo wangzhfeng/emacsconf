@@ -1,7 +1,6 @@
-(require-package 'powerline)
-
-(require 'powerline)
-;; (powerline-default-theme)
-(powerline-center-evil-theme)
+;; 设置mode-line样式
+(require-package 'powerline-evil)
+(require 'powerline-evil)
+(powerline-evil-center-color-theme)
 
 (provide 'init-powerline)

@@ -1,12 +1,3 @@
-;;----------------------------------------------------------------------------
-;; Add lisp directory to loadpath
-
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
-(package-initialize)
-
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
 ;;----------------------------------------------------------------------------
@@ -16,20 +7,28 @@
 (require 'init-site-lisp)
 (require 'init-elpa)
 ;; (require 'init-exec-path)
+
 (require 'init-editing)
 (require 'init-powerline)
-
-;; Emacs Config
 (require 'init-windows)
 (require 'init-themes)
 (require 'init-fonts)
 (require 'init-evil)
+
 (require 'init-markdown)
 (require 'init-git)
 (require 'init-javascript)
 (require 'init-html)
 (require 'init-css)
 (require 'init-sql)
+(require 'init-org)
+;; (require 'init-php)
+(require 'init-yaml)
+(require 'init-coffee)
+;; (require 'init-novel)
+(require 'init-vbs)
+(require 'init-nxml)
+(require 'init-rest)
 
 ;;----------------------------------------------------------------------------
 ;; Allow access from emacsclient
@@ -51,5 +50,7 @@
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (when (file-exists-p custom-file)
   (load custom-file))
+
+(provide 'init)
 
 
