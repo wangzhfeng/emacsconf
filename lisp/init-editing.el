@@ -10,6 +10,16 @@
 (require 'hungry-delete)
 (global-hungry-delete-mode)
 
+;; Default mode 
+(setq default-major-mode 'text-mode)
+;; (add-hook 'text-mode-hook 'turn-on-auto-fill)
+
+(define-key global-map "\C-x\C-u" 'undo)
+
+;; 禁用备份文件
+(setq make-backup-files nil)
+(global-auto-revert-mode)
+
 (require 'smex)
 (smex-initialize)
 
@@ -34,5 +44,20 @@
 (wrap-region-add-wrapper "$" "$")
 
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
+
+;;------------------------------------------------------------
+;; 最近编辑文件
+;;------------------------------------------------------------
+(require 'recentf)
+(recentf-mode 1)
+(setq recentf-max-menu-items 25)
+(global-set-key "\C-x\ \C-r" 'recentf-open-files)
+
+;; 快速打开初始化配置文件
+(defun open-my-init-file()
+  (interactive)
+  (find-file "~/.emacs.d/init.el"))
+
+(global-set-key (kbd "<f2>") 'open-my-init-file)
 
 (provide 'init-editing)

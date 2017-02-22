@@ -8,6 +8,8 @@
 (require 'init-elpa)
 ;; (require 'init-exec-path)
 
+(require 'init-coding)
+(require 'init-gui-frames)
 (require 'init-editing)
 (require 'init-powerline)
 (require 'init-windows)
