@@ -6,5 +6,9 @@
 ;; 快速将文件编码设置为UTF-8
 (global-set-key (kbd "<f3>") (lambda () (interactive) (set-buffer-file-coding-system 'utf-8)))
 
+
+;; 设置buffer编码为gbk
+(global-set-key (kbd "<f4>") (lambda () (interactive) (revert-buffer-with-coding-system 'gbk)))
+
 (provide 'init-coding)
 

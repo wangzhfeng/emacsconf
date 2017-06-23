@@ -15,4 +15,8 @@
 (require 'evil-matchit)
 (global-evil-matchit-mode t)
 
+;; 智能括号
+(require-package 'evil-smartparens)
+(add-hook 'smartparens-enabled-hook #'evil-smartparens-mode)
+
 (provide 'init-evil)

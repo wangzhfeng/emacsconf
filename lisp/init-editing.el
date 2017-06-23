@@ -18,6 +18,7 @@
 
 ;; 禁用备份文件
 (setq make-backup-files nil)
+;; 自动重新加载文件
 (global-auto-revert-mode)
 
 (require 'smex)
@@ -59,5 +60,6 @@
   (find-file "~/.emacs.d/init.el"))
 
 (global-set-key (kbd "<f2>") 'open-my-init-file)
+
 
 (provide 'init-editing)
