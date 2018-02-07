@@ -18,4 +18,6 @@ indentation rules."
     (nxml-mode)
     (indent-region begin end)))
 
+(setq nxml-child-indent 4 nxml-attribute-indent 4)
+
 (provide 'init-nxml)

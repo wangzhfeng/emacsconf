@@ -5,6 +5,7 @@
 (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.hbs\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.ejs\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.jsp\\'" . web-mode))
 
 ;; emmet mode
 (require 'emmet-mode)
@@ -15,7 +16,6 @@
   (tagedit-add-paredit-like-keybindings)
   (add-hook 'sgml-mode-hook (lambda () (tagedit-mode 1))))
 
-(add-to-list 'auto-mode-alist '("\\.jsp\\'" . web-mode))
 
 ;; 跳转到开始和结束元素
 (add-hook 'web-mode

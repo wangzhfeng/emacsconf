@@ -19,4 +19,8 @@
 (require-package 'evil-smartparens)
 (add-hook 'smartparens-enabled-hook #'evil-smartparens-mode)
 
+;; k和j，上下移动光标
+(define-key evil-normal-state-map (kbd "j") 'evil-next-visual-line)
+(define-key evil-normal-state-map (kbd "k") 'evil-previous-visual-line)
+
 (provide 'init-evil)

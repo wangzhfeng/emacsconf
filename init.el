@@ -28,6 +28,7 @@
 (require 'init-markdown)
 (require 'init-git)
 (require 'init-javascript)
+(require 'init-typescript)
 (require 'init-html)
 (require 'init-css)
 (require 'init-sql)
@@ -42,6 +43,8 @@
 (require 'init-csv)
 (require 'init-groovy)
 (require 'init-writeroom)
+(require 'init-nginx)
+(require 'init-slime)
 
 ;;----------------------------------------------------------------------------
 ;; Allow access from emacsclient

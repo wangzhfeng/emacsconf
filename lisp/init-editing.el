@@ -18,6 +18,9 @@
 
 ;; 禁用备份文件
 (setq make-backup-files nil)
+
+;; 禁用自动保存功能
+(setq auto-save-default nil)
 ;; 自动重新加载文件
 (global-auto-revert-mode)
 

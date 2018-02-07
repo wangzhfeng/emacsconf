@@ -1,11 +1,12 @@
 ;;; 设置字体
-;;(set-frame-font "Monaco-12")
+;;(set-frame-font "Monaco-13")
 (set-frame-font "Consolas-13")
 (dolist (charset '(han kana symbol cjk-misc bopomofo))
   (set-fontset-font (frame-parameter nil 'font)
                     charset
-                   ;; (font-spec :family "SimSun" :size 18)
-                    (font-spec :family "Microsoft Yahei" :size 16)
+                   ;; (font-spec :family "SimSun" :size 17)
+                    (font-spec :family "Microsoft Yahei" :size 15)
+                    ;; (font-spec :family "Microsoft Yahei" :size 17)
                     ))
 
 (require-package 'default-text-scale)

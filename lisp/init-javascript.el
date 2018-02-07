@@ -8,6 +8,7 @@
 (require-package 'js-doc)
 (require 'js-doc)
 
+(setq js2-strict-missing-semi-warning nil)
 (add-hook 'js2-mode-hook
            #'(lambda ()
                (define-key js2-mode-map "\C-ci" 'js-doc-insert-function-doc)
