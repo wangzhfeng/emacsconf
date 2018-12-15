@@ -9,13 +9,12 @@
 (require-package 'blackboard-theme)
 (require-package 'color-theme-sanityinc-solarized)
 
-;; (load-theme 'monokai t)
+(load-theme 'monokai t)
 ;; (load-theme 'molokai t)
 ;; (load-theme 'wombat t)
 ;; (load-theme 'zenburn t)
-;; (load-theme 'solarized t)
 ;; (load-theme 'sanityinc-solarized-light t)
- (load-theme 'blackboard t)
+;; (load-theme 'blackboard t)
 ;; (load-theme 'spacemacs-dark t)
 
 ;;------------------------------------------------------------------------------

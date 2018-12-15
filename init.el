@@ -45,6 +45,8 @@
 (require 'init-writeroom)
 (require 'init-nginx)
 (require 'init-slime)
+(require 'init-vimrc)
+(require 'init-asciidoc)
 
 ;;----------------------------------------------------------------------------
 ;; Allow access from emacsclient

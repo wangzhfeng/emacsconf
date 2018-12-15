@@ -6,7 +6,6 @@
                     charset
                    ;; (font-spec :family "SimSun" :size 17)
                     (font-spec :family "Microsoft Yahei" :size 15)
-                    ;; (font-spec :family "Microsoft Yahei" :size 17)
                     ))
 
 (require-package 'default-text-scale)

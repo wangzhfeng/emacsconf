@@ -26,6 +26,7 @@
 (setq-default cursor-type 'bar)
 
 ;; Make emacs full screen
-(setq initial-frame-alist (quote ((fullscreen . maximized))))
+;;(setq initial-frame-alist (quote ((fullscreen . maximized))))
+;; (setq initial-frame-alist (quote ((maximized))))
 
 (provide 'init-gui-frames)
